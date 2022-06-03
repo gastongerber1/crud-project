@@ -1,9 +1,8 @@
-const mongoose = require('mongoose');
-
-const URI = 'mongodb+srv://gastongerber1:Maradona1990.@cluster0.aqvck.mongodb.net/?retryWrites=true&w=majority';
-
-mongoose.connect(URI)
-    .then(db => console.log('DB is connected'))
-    .catch(err => console.error(err));
-
-module.exports = mongoose;
+const { MongoClient, ServerApiVersion } = require('mongodb');
+const uri = "mongodb+srv://gastongerber1:Maradona1999.@cluster0.aqvck.mongodb.net/?retryWrites=true&w=majority";
+const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
+client.connect(err => {
+  const collection = client.db("test").collection("devices");
+  // perform actions on the collection object
+  client.close();
+});
