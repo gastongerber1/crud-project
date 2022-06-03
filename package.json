@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://gastongerber1.github.io/crud-project/",
   "scripts": {
     "start": "node src/index.js",
     "dev": "nodemon src/index.js",
