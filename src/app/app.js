@@ -161,9 +161,9 @@ class App extends Component {
                             <button onClick={() => this.deleteTask(task._id)} className="btn light-blue darken-4">
                               <i className="material-icons">delete</i> 
                             </button>
-                            {/* <button onClick={() => this.editTask(task._id)} className="btn light-blue darken-4" style={{margin: '4px'}}>
+                            <button onClick={() => this.editTask(task._id)} className="btn light-blue darken-4" style={{margin: '4px'}}>
                               <i className="material-icons">edit</i>
-                            </button> */}
+                            </button>
                           </td>
                         </tr>
                       )
